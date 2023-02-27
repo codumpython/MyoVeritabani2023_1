@@ -1,1 +1,1 @@
-select"merhaba"
+SELECT "MERHABA"
