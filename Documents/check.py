@@ -1,7 +1,7 @@
 import os
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
 # print(len(liste))
-fileName = "select1.sql"
+fileName = "select2.sql"
 for item in liste:
     open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","a+")
 
