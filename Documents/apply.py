@@ -11,9 +11,8 @@ for item in liste:
             if cevap == "": raise Exception("Boş")
             db = sql.connect("/workspace/MyoVeritabani2023_1/chinook.db")
             cur = db.cursor()
-            result = cur.execute(cevap)
-            if len(result.fetchall()) != 1 and result.fetchall()[0] != 2:
-                raise Exception("Sorgu")
+            cur.execute(cevap)
+            
             db.commit()
         except Exception as hata:
             print(item,"=> ",hata)

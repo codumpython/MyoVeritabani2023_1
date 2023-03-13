@@ -1,2 +1,2 @@
 /* AlbumId si 45 ten büyük olan kaç adet albüm vardır */
-S
+SELECT count(*) FROM albums WHERE AlbumId > 45
