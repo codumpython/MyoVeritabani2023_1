@@ -1,2 +1,4 @@
-SELECT count(*) FROM albums WHERE albumId > 45
+SELECT count(*) FROM albums WHERE Title LIKE 'A__s%'
+
+
  
