@@ -3,7 +3,7 @@ import sqlite3 as sql
 # cur = db.cursor()
 import os
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
-fileName = "select2.sql"
+fileName = "where3.sql"
 for item in liste:
     with open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","r") as dosya:
         cevap = dosya.read().strip()
@@ -12,7 +12,10 @@ for item in liste:
             db = sql.connect("/workspace/MyoVeritabani2023_1/chinook.db")
             cur = db.cursor()
             cur.execute(cevap)
-            
+            if cur.fetchall()[0][0] == 302:
+                print(item,"=> OK")
+            else:
+                print(item,"=> CHECK")
             db.commit()
         except Exception as hata:
             print(item,"=> ",hata)
