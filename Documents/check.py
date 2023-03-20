@@ -1,16 +1,14 @@
 import os
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
 # print(len(liste))
-fileName = "orderby.sql"
+fileName = "insert1.sql"
 for item in liste:
     metin = """
 /*
 ----Egzersiz----
-Veritabanında bulunan customers tablosunda yer alan verilerden
-State sütunu dolu olan ve Fax sütunu boş olan CustomerId sütunu
-20 ile 25 arasında olan verileri CustomerId verileri büyükten 
-küçüğe doğru sıralanacak şekilde verileri getiren sql sorgusunu
-yazınız
+Veritabanında bulunan insertegzersiz tablosun içerisine
+Firstname,Lastname,Email ve Number sütunlarına veri girişi yaparak
+kendi bilgileriniz kaydediniz. 
 */
 """
     print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","a+"))
