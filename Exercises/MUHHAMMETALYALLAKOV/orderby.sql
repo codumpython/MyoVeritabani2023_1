@@ -7,4 +7,7 @@ State sütunu dolu olan ve Fax sütunu boş olan CustomerId sütunu
 küçüğe doğru sıralanacak şekilde verileri getiren sql sorgusunu
 yazını
 */
+SELECT * FROM Customers
+WHERE State IS NOT NULL
+AND Fax IS NULL
 

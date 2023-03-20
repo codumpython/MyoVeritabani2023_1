@@ -7,4 +7,7 @@ State sütunu dolu olan ve Fax sütunu boş olan CustomerId sütunu
 küçüğe doğru sıralanacak şekilde verileri getiren sql sorgusunu
 yazını
 */
+WHERE state is not NUSELECT * FROM customers LL and fax is null and CustomerId BETWEEN 20 and 25
+ORDER BY CustomerId DESC
+
 

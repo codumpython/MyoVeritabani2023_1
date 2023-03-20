@@ -1,4 +1,8 @@
 
+WHERE state is not NUSELECT * FROM customers LL and fax is null and CustomerId BETWEEN 20 and 25
+ORDER BY CustomerId DESC
+
+
 /*
 ----Egzersiz----
 Veritabanında bulunan customers tablosunda yer alan verilerden

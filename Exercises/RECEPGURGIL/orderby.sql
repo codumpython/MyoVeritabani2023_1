@@ -8,3 +8,6 @@ küçüğe doğru sıralanacak şekilde verileri getiren sql sorgusunu
 yazını
 */
 
+SELECT * FROM Customers
+WHERE State IS NOT NULL AND Fax IS NULL AND CustomerId BETWEEN 20 AND 25
+ORDER BY CustomerId DESC

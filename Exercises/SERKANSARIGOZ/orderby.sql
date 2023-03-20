@@ -1,3 +1,7 @@
+SELECT * FROM customers 
+WHERE State is not NULL and fax is null and CustomerId BETWEEN 20 and 25
+ORDER BY CustomerId DESC
+
 
 /*
 ----Egzersiz----

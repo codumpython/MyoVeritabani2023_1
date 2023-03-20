@@ -1,4 +1,7 @@
-
+SELECT * FROM customers 
+WHERE State IS NOT NULL AND FaxIS NULL AND
+CustomerId BETWEEN 20 AND 25   
+ORDER BY CustomerId DESC; 
 /*
 ----Egzersiz----
 Veritabanında bulunan customers tablosunda yer alan verilerden
