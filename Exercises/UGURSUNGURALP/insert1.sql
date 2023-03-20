@@ -1,4 +1,5 @@
-
+INSERT INTO insertegzersiz ( FirstName, LastName, Email, Number )
+VALUES ('UĞUR','SUNGURALP','ugursunguralp@gmail.com',5396241903);
 /*
 ----Egzersiz----
 Veritabanında bulunan insertegzersiz tablosun içerisine

@@ -1,3 +1,6 @@
+INSERT INTO insertegzersiz (FirstName,LastName,Email) 
+VALUES ('Burak','Karataş','brkkrts99@gmail.com');
+
 
 /*
 ----Egzersiz----
