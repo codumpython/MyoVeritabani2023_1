@@ -1,3 +1,4 @@
+DELETE FROM insertegzersiz WHERE StudentId IN (26);
 
 /*
 ----Egzersiz----

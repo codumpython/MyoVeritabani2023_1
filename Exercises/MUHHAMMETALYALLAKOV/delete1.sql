@@ -4,3 +4,4 @@
 insertegzersiz tablosu içerisindeki tüm kayıtlarınızı siliniz.
 */
 
+DELETE FROM insertegzersiz WHERE FirstName='MUHAMMETALİ' 

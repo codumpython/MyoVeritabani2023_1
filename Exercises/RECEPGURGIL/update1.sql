@@ -16,3 +16,4 @@ LastName = 'GÜRGİL',
 UpdateTime = datetime()
 WHERE StudentId = 20;
 
+
