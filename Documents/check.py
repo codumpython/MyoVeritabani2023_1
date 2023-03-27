@@ -1,14 +1,18 @@
 import os
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
 # print(len(liste))
-fileName = "insert1.sql"
+fileName = "update1.sql"
 for item in liste:
     metin = """
 /*
 ----Egzersiz----
-Veritabanında bulunan insertegzersiz tablosun içerisine
-Firstname,Lastname,Email ve Number sütunlarına veri girişi yaparak
-kendi bilgileriniz kaydediniz. 
+UPDATE insertegzersiz SET
+FirstName = 'İBRAHİM',
+LastName = 'EDİZ',
+UpdateTime = datetime()
+WHERE StudentId = 1;
+yukarıdaki sorguyu kullanarak insertegzersiz tablosundaki tüm 
+kayıtlarınız güncelleyiniz
 */
 """
     print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","a+"))

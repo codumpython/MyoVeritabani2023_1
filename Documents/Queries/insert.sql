@@ -12,4 +12,3 @@
 
 -- SELECT DISTINCT FirstName,LastName FROM insertegzersiz
 
-UPDATE insertegzersiz SET Number = 0 
