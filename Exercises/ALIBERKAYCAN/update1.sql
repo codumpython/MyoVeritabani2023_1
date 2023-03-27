@@ -1,3 +1,10 @@
+UPDATE insertegzersiz SET
+FirstName = 'ALIBERKAY',
+LastName = 'CAN',
+Email ='aliberkaycan0@gmail.com	',
+UpdateTime = datetime()
+WHERE StudentId = 11;
+SELECT * FROM insertegzersiz
 
 /*
 ----Egzersiz----

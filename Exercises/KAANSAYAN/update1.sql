@@ -1,4 +1,9 @@
-
+UPDATE insertegzersiz SET 
+FirstName = 'KAAN',
+LastName = 'SAYAN',
+UpdateTime = datetime()
+WHERE StudentId = 7;
+SELECT * FROM insertegzersiz 
 /*
 ----Egzersiz----
 UPDATE insertegzersiz SET

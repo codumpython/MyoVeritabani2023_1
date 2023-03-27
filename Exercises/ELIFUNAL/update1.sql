@@ -10,3 +10,8 @@ yukarıdaki sorguyu kullanarak insertegzersiz tablosundaki tüm
 kayıtlarınız güncelleyiniz
 */
 
+UPDATE insertegzersiz SET
+FirstName = 'ELİF',
+LastName = 'ÜNAL',
+UpdateTime = datetime()
+WHERE StudentId = 4; 
