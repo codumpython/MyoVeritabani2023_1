@@ -7,4 +7,4 @@ Firstname,Lastname,Email ve Number sütunlarına veri girişi yaparak
 kendi bilgileriniz kaydediniz. 
 */
 
-SELECT * FROM insertegzersiz 
+SELECT * FROM insertegzersiz WHERE FirstName='MUHAMMETALİ' 
