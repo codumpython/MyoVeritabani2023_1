@@ -1,5 +1,9 @@
-INSERT INTO insertegzersiz (FirstName, LastName, Email, Number)
+/*INSERT INTO insertegzersiz (FirstName, LastName, Email, Number)
 VALUES('Veli', 'Onay', 'velionay45@gmail.com', 50505055050);
+*/
+SELECT 
+AlbumId,Count(*)
+FROM tracks GROUP BY AlbumId;
 /*
 ----Egzersiz----
 Veritabanında bulunan insertegzersiz tablosun içerisine

@@ -1,12 +1,13 @@
 import os
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
 # print(len(liste))
-fileName = "delete1.sql"
+fileName = "groupby1.sql"
 for item in liste:
     metin = """
 /*
 ----Egzersiz----
-insertegzersiz tablosu içerisindeki tüm kayıtlarınızı siliniz.
+diagram.png dosyasında faydalanarak hangi artistin kaç albümü olduğunu gösteren sorguyu yazınız.
+Sorgu ArtisAdı,Albüm Sayısı Şeklinde olmalıdır
 */
 """
     print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","a+"))

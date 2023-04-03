@@ -1,1 +1,3 @@
-SELECT CustomerName,City FROM
+SELECT 
+UnitPrice,count(*)
+FROM tracks GROUP BY UnitPrice
