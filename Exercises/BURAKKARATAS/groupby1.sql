@@ -1,4 +1,7 @@
-
+SELECT
+(SELECT gnr.Name FROM genres AS gnr
+WHERE gnr.GenreId = tra.GenreId) AS GenreAdi,
+COUNT(*) FROM tracks AS tra GROUP BY tra.GenreId;
 
 
 /*

@@ -1,7 +1,9 @@
 SELECT 
-(SELECT art.Name FROM artists as art 
-WHERE art.ArtistId = alb.ArtistId)
-,COUNT(*) FROM albums AS alb GROUP BY alb.ArtistId;
+(SELECT gnr.Name FROM genres AS gnr 
+WHERE gnr.GenreId = tra.GenreId)
+,COUNT(*) 
+FROM tracks AS tra 
+GROUP BY tra.GenreId;
 
 
 
