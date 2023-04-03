@@ -6,11 +6,11 @@ for item in liste:
     metin = """
 /*
 ----Egzersiz----
-diagram.png dosyasında faydalanarak hangi artistin kaç albümü olduğunu gösteren sorguyu yazınız.
-Sorgu ArtisAdı,Albüm Sayısı Şeklinde olmalıdır
+diagram.png dosyasında faydalanarak hangi Farklı Genre bilgisina sahip kaç parça olduğunu gösteren sorguyu yazınız.
+Sorgu Genre Adı,Parça Sayısı Şeklinde olmalıdır
 */
 """
-    print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","a+"))
+    print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","w+"))
 
 # for item in liste:
 #     with open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","r") as dosya1,\
