@@ -1,5 +1,5 @@
 SELECT 
-art.Name,
+art.Name as "Artist Adı",
 alb.Title,
 tra.Name
 FROM tracks as tra
@@ -18,3 +18,4 @@ ON art.ArtistId = alb.ArtistId;
 -- LEFT JOIN media_types as mtp ON mtp.MediaTypeId = tra.MediaTypeId
 
 
+SELECT max(TrackId) FROM tracks

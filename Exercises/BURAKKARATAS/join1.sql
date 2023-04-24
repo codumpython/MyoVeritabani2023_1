@@ -1,15 +1,15 @@
 SELECT
-emp.FirstName,
+emp.FirstName, 
 emp.LastName,
 cus.FirstName,
 cus.LastName,
 inv.InvoiceId,
 inv.InvoiceDate
-FROM customers AS cus
-INNER JOIN invoices AS inv
-ON cus.CustomerId = inv.CustomerId
-LEFT JOIN employees AS emp
-ON 
+FROM employees emp
+INNER JOIN customers cus
+ON cus.SupportRepId = emp.EmployeeId
+INNER JOIN invoices inv
+ON inv.CustomerId = cus.CustomerId
 
 /*
 ----Egzersiz----

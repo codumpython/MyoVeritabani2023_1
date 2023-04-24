@@ -1,15 +1,13 @@
-SELECT 
-emp.FirstName,
-emp.LastName,
-cus.FirstName,
-cus.LastName,
-inv.InvoiceId,
-inv.InvoiceDate
-FROM employees as emp
-LEFT JOIN customers as cus 
-ON alb.AlbumId = tra.AlbumId
-LEFT JOIN invoices as inv 
-ON art.ArtistId = alb.ArtistId;
+SELECT
+e.FirstName,
+e.LastName,
+c.FirstName,
+c.LastName,
+i.InvoiceId,
+i.InvoiceDate
+FROM employees e 
+INNER JOIN customers c ON c.SupportRepId = e.EmployeeId
+INNER JOIN invoices i ON i.CustomerId = c.CustomerId
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 

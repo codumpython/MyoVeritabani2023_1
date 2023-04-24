@@ -1,11 +1,10 @@
-SELECT
-emp.FirstName,
-emp.LastName,
-cus.FirstName,
-cus.LastName,
-Inv.InvocieId,
-Inv.InvocieDate
-From customers AS cus
+SELECT 
+From employees e 
+INNER JOIN customers c ON c.SupportRedIp = e.EmployeeId
+INNER JOIN invocies i ON i.CustomerId = c.CustomerID
+
+INNER JOIN invocies i ON i.CustomerId = c.CustomerID
+
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 

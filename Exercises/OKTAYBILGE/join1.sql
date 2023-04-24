@@ -1,4 +1,15 @@
-SELECT 
+SELECT
+e.FirstName,
+e.LastName,
+c.FirstName,
+c.LastName,
+i.InvoiceId,
+i.InvoiceDate
+FROM employees e 
+INNER JOIN customers c ON c.SupportRepId = e.EmployeeId
+INNER JOIN invoices i ON i.CustomerId = c.CustomerId
+
+
 
 
 /*

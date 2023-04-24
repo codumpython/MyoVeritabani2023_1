@@ -1,22 +1,16 @@
 import os
+import random as rnd
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
 # print(len(liste))
-fileName = "join1.sql"
+fileName = "join2.sql"
 for item in liste:
-    metin = """
+    mini,maxi = sorted(rnd.sample([i for i in range(1,3503)],2))
+    metin = f"""
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 
-hangi çalışanın hangi müşterisinin hangi tarih hangi siparişi verdiğini
-gösteren sorguyu left join kullanarak yazınız.
-Örnek tablo çıktısı 
-ÇalışanAdı,
-ÇalışanSoyadı,
-MüşteriAdı,
-MüşteriSoyadı,
-SiparişId,
-SiparişTarih 
-şeklinde olmalıdır
+Playlist ve içerisinde bulunan parçaların adlarını albüm isimleriyle birlikte parça isimlerini listeleyen sorguyu yazınız
+Bu parçalardan id si {mini} ile {maxi} arasında yer alan kayıtları listelemek için sorgu sonuna şart yazınız
 */
 """
     print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","w+"))

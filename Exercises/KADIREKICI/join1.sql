@@ -1,4 +1,4 @@
-SELECT
+SELECT*FROM emp.
 emp.FirstName,
 emp.LastName,
 cus.FirstName,
