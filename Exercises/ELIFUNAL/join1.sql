@@ -1,4 +1,11 @@
-
+SELECT
+e.FirstName,
+e.LastName,
+c.FirstName,
+c.LastName,
+i.InvoiceId,
+i.InvoiceDate
+FROM 
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 

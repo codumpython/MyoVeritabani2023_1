@@ -1,4 +1,16 @@
 
+SELECT 
+emp.FirstName,
+emp.LastName,
+cus.FirstName,
+cus.LastName,
+inv.InvoiceId,
+inv.InvoiceDate
+FROM employees as emp
+LEFT JOIN customers as cus 
+ON emp.EmployeeId = cus.SupportRepId
+LEFT JOIN invoices as inv 
+ON inv.InvoiceId = cus.CustomerId;
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 

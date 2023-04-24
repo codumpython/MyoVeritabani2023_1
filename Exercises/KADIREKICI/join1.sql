@@ -1,4 +1,11 @@
-
+SELECT
+emp.FirstName,
+emp.LastName,
+cus.FirstName,
+cus.LastName,
+Inv.InvocieId,
+Inv.InvocieDate
+From customers AS cus
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 

@@ -1,4 +1,9 @@
-
+SELECT
+emp.FirstName,emp.LastName,cust.CustomersName,cust.CustomersLastName.Orders.OrderID,Orders.OrderDate
+FROM
+Employees
+LEFT JOIN
+Orders
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 
