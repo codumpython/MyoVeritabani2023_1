@@ -1,7 +1,7 @@
 
 SELECT 
-emp.FirstName,
-emp.LastName,
+emp.FirstName as "Çalışan Adı",
+emp.LastName as calisansoyadi,
 cus.FirstName,
 cus.LastName,
 inv.InvoiceId,

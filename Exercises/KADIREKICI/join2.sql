@@ -1,4 +1,7 @@
-
+SELECT 
+albums.Title AS AlbumN, 
+tracks.Name AS TrackN
+FROM tracks
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 

@@ -1,3 +1,14 @@
+SELECT 
+plt.PlaylistId,
+plt.Name,
+alb.Title,
+tra.Name
+FROM playlist_track AS plt 
+INNER JOIN playlists AS pls ON pl.PlaylistId = plt.PlaylistId
+INNER JOIN tracks as tra ON tra.TrackId = plt.TrackId
+INNER JOIN albums as alb ON alb.AlbumId = tra.AlbumId
+WHERE
+tra.TrackId BETWEEN 653 and 817
 
 /*
 ----Egzersiz----

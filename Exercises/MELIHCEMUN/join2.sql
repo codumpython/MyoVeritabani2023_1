@@ -1,4 +1,14 @@
-
+SELECT
+plt.PlaylistId,
+pl.Name,
+alb.Title,
+tra.Name
+FROM playlist_track AS plt 
+INNER JOIN playlists AS pl ON pl.PlaylistId = plt.PlaylistId
+INNER JOIN tracks as tra ON  tra.TrackId = plt.TrackId
+INNER JOIN albums as alb ON alb.AlbumId = tra.AlbumId
+WHERE 
+tra.TrackId BETWEEN 1587 and 3299
 /*
 ----Egzersiz----
 diagram.png dosyasında faydalanarak 
