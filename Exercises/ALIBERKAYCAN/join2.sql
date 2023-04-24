@@ -1,10 +1,10 @@
 SELECT
-p.Name
-t.Name
-t.AlbumID
+p.Name,
+t.Name,
+t.AlbumId
 FROM tracks t
-INNER JOIN playlist_track pt ON pt.TrackID = t.TrackID
-INNER JOIN playlist p ON pt.PlaylistID = p.PlaylistID
+INNER JOIN playlist_track pt ON pt.TrackId = t.TrackId
+INNER JOIN playlists p ON pt.PlaylistId = p.PlaylistId
 INNER JOIN albums a ON a.AlbumID = t.AlbumId
 WHERE t.trackID BETWEEN 710 AND 1099
 /*
