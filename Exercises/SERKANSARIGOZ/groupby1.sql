@@ -1,3 +1,6 @@
+SELECT 
+(SELECT gnr.Name FROM genres as gnr WHERE gnr.GenreId = tra.GenreId) 
+AS GenreParca, COUNT(*) FROM tracks AS tra GROUP BY tra.GenreId;
 
 /*
 ----Egzersiz----
