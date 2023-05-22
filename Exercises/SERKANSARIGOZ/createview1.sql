@@ -1,3 +1,12 @@
+SELECT * 
+FROM playlists pl,
+     playlist_track plt,
+     albums alb,
+     tracks tra,
+     artists art,
+WHERE art 
+
+
 
 /*
 ----Egzersiz----
