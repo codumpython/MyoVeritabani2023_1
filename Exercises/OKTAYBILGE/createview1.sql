@@ -1,11 +1,21 @@
 
-SELECT playlists.Playlistld, playlists.Name, tracks.Name, albums.Title, artists.Name
-FROM playlists
-JOIN playlist_track ON playlist_track.Playlistld = playlists.Playlistld
-JOIN tracks ON tracks.Trackld = playlist_track.Trackld
-JOIN albums ON albums.Albumid = tracks.Albumid
-JOIN artists ON artists.Artistid = albums.Artistid
-ORDER BY playlists.Playlistld
+CREATE VIEW V_PLAYLIST_DETAY_OKT AS 
+SELECT 
+plt.PlaylistId as PlaylistID,
+pl.name as PlaylistADI,
+tra.Name as ParcaADI,
+alb.Title as AlbumADI,
+art.Name as SanatciADI
+FROM playlists pl,
+    playlist_track plt,
+    albums alb,
+    tracks tra,
+    artists art
+WHERE art.ArtistId = alb.AlbumId
+    AND alb.AlbumId = tra.AlbumId
+    AND plt.TrackId = tra.TrackId
+    AND pl.PlaylistId = plt.PlaylistId
+    ORDER BY plt.PlaylistId;
 
 /*
 ----Egzersiz----

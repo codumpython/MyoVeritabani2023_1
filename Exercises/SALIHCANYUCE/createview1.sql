@@ -1,19 +1,25 @@
-SELECT 
-playlists.PlaylistId,
-playlists.Name,
+CREATE VIEW V_PLAYLIST_DETAY_SY AS
+SELECT plt.PlaylistId as PlaylistID,
+    pl.name as PlaylistADI,
+    tra.Name as ParcaADI,
+    alb.Title as AlbumADI,
+    art.Name as SanatciADI
+FROM playlists pl,
+    playlist_track plt,
+    albums alb,
+    tracks tra,
+    artists art
+WHERE art.ArtistId = alb.AlbumId
+    AND alb.AlbumId = tra.AlbumId
+    AND plt.TrackId = tra.TrackId
+    AND pl.PlaylistId = plt.PlaylistId
+ORDER BY plt.PlaylistId;
 
-
-FROM 
-tracks
-INNER JOIN playlist_track ON playlist_track.PlaylistId = tracks.PlaylistId
-INNER JOIN playlists ON playlists.PlaylistId = playlist_track.PlaylistId
-INNER JOIN albums ON albums.AlbumId = tracks.AlbumId
-INNER JOIN artists ON artists.ArtistId = albums.ArtistId
+SELECT * FROM V_PLAYLIST_DETAY_SY
 
 /*
-----Egzersiz----
-diagram.png dosyasında faydalanarak 
-PlaylistID,PlaylistADI,ParcaADI,AlbumADI,SanatciADI
-yukarıdaki bilgileri bize getiren sorguyu yazınız
-*/
-
+ ----Egzersiz----
+ diagram.png dosyasında faydalanarak 
+ PlaylistID,PlaylistADI,ParcaADI,AlbumADI,SanatciADI
+ yukarıdaki bilgileri bize getiren sorguyu yazınız
+ */

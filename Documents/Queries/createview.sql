@@ -1,10 +1,4 @@
-/*
- ----Egzersiz----
- diagram.png dosyasında faydalanarak 
- PlaylistID,PlaylistADI,ParcaADI,AlbumADI,SanatciADI
- yukarıdaki bilgileri bize getiren sorguyu yazınız
- */
-CREATE VIEW V_PLAYLIST_DETAY_IE AS
+CREATE VIEW V_PLAYLIST_DETAY AS
 SELECT plt.PlaylistId as PlaylistID,
     pl.name as PlaylistADI,
     tra.Name as ParcaADI,
@@ -20,3 +14,9 @@ WHERE art.ArtistId = alb.AlbumId
     AND plt.TrackId = tra.TrackId
     AND pl.PlaylistId = plt.PlaylistId
 ORDER BY plt.PlaylistId;
+
+
+SELECT * FROM V_PLAYLIST_DETAY WHERE PlaylistID = 1;
+
+
+select * from sqlite_master where type='view'

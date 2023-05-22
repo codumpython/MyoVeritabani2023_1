@@ -1,6 +1,6 @@
-SELECT 
-plt.PlaylistId as PlaylistID,
-plt.Name as PlaylistADI,
+CREATE VIEW V_PLAYLIST_DETAY_KAAN AS
+ SELECT plt.PlaylistId as PlaylistID,
+pl.name as PlaylistADI,
 tra.Name as ParcaADI,
 alb.Title as AlbumADI,
 art.Name as SanatciADI
@@ -14,6 +14,10 @@ WHERE art.ArtistId = alb.AlbumId
     AND plt.TrackId = tra.TrackId
     AND pl.PlaylistId = plt.PlaylistId
     ORDER BY plt.PlaylistId;
+
+
+SELECT * FROM V_PLAYLIST_DETAY WHERE = PlaylistID = 1;
+
 
 /*
 ----Egzersiz----
