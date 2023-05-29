@@ -2,15 +2,13 @@ import os
 import random as rnd
 liste = os.listdir("/workspace/MyoVeritabani2023_1/Exercises")
 # print(len(liste))
-fileName = "createview1.sql"
+fileName = "altertable1.sql"
 for item in liste:
     
     metin = f"""
 /*
 ----Egzersiz----
-diagram.png dosyasında faydalanarak 
-PlaylistID,PlaylistADI,ParcaADI,AlbumADI,SanatciADI
-yukarıdaki bilgileri bize getiren sorguyu yazınız
+islemadimlar.jpg dosyası içerisindeki adımları takip ediniz
 */
 """
     print(metin,file=open(f"/workspace/MyoVeritabani2023_1/Exercises/{item}/{fileName}","w+"))

@@ -5,7 +5,7 @@ diagram.png dosyasında faydalanarak
 PlaylistID,PlaylistADI,ParcaADI,AlbumADI,SanatciADI
 yukarıdaki bilgileri bize getiren sorguyu yazınız
 */
-CREATE VIEW V_RG AS
+CREATE VIEW V_PLAYLIST_DETAY_RG AS
 SELECT 
 plt.PlaylistId as PlaylistID,
 pl.name as PlaylistADI,
